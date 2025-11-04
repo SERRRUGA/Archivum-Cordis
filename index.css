@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Passion One', cursive;
+    background-color: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ff4d6d;
+    text-shadow: 0 0 10px rgba(255, 77, 109, 0.7);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff4d6d;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.coming-soon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ffdcdc;
+    text-shadow: 0 0 70px rgba(255, 62, 97, 0.7);
+    letter-spacing: 2px;
+}
+
+.drop-text {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .coming-soon {
+        font-size: 2.5rem;
+    }
+    
+    .drop-text {
+        font-size: 2rem;
+    }
+}
