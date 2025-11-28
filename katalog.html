@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivum Cordis</title>
+    <title>Каталог - Archivum Cordis</title>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <div class="logo">Archivum Cordis</div>
+        <div class="logo">ArchivumCordis</div>
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="onas.html">О нас</a></li>
-                <li><a href="svaz.html">Связаться с нами</a></li>
+                <li><a href="svaz.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div class="coming-soon">COMING SOON</div>
-        <div class="drop-text">DROP...</div>
+        <h1 class="catalog-title">Дропы</h1>
+        
+        <div class="drops-grid">
+            <div class="drop-card">
+                <div class="drop-image">
+                    <video autoplay muted loop playsinline>
+                        <source src="img\AC SC Video.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео
+                    </video>
+                    <div class="drop-overlay">
+                        <button class="view-drop-btn">Смотреть коллекцию</button>
+                    </div>
+                </div>
+                <div class="drop-info">
+                    <h2 class="drop-name">Scarlet Memories</h2>
+                    <div class="drop-date">XX.01.2026</div>
+                    <p class="drop-desc">Ностальгия по несуществующему прошлому</p>
+                    <div class="drop-stats">
+                        <span class="drop-status upcoming">Скоро</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
+
     <footer>
         &copy; 2025 Archivum Cordis. All rights reserved.
     </footer>
 </body>
-
 </html>
